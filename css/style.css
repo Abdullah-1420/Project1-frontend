@@ -1,0 +1,170 @@
+:root {
+    --mainColor: black;
+    --textColor: white;
+    --searchInput: #222222;
+}
+
+
+body {
+    background: var(--mainColor);
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: .2s ease-in-out;
+}
+
+a:hover {
+    color: var(--textColor);
+    background-color: var(--searchInput);
+    border-radius: 46px;
+}
+
+#right,
+#center {
+    border-left: 1px solid #4a4a4a;
+    padding-top: 20px;
+}
+
+#right .list-group {
+    position: fixed;
+    width: 26%;
+    direction: rtl;
+}
+
+.list-group .list-group-item {
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    font-size: 23px;
+    font-weight: 700;
+    border: none;
+}
+
+.form-check{
+    color: var(--textColor);
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+.navButtons {
+    margin-top: 20px;
+}
+
+.my-bg-dark {
+    background-color: var(--mainColor) !important;
+    padding-top: 10px;
+    height: 110px;
+    margin-left: -12PX;
+    margin-right: -11px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.bg-dark {
+    background-color: var(--mainColor) !important;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--textColor) !important;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("https://play-lh.googleusercontent.com/8MjSRu86KXNU5h83by1Hj67zWUsrWJnYKS4WYg2njfOUhJHZzOW96p-5sHWnHROGWg")
+}   
+
+.search-control {
+    background-color: var(--searchInput);
+    color: var(--textColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    direction: rtl;
+}
+
+.search-control:focus {
+    color: var(--textColor);
+    background-color: var(--searchInput);
+    border: none;
+    outline: 0;
+}
+
+.main {
+    margin-top: 20px;
+    text-align: right;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.card {
+    direction: rtl;
+    background-color: var(--mainColor);
+    border-bottom: 1px solid #4a4a4a;
+    margin: 10px 0;
+    color: var(--textColor);
+    border-radius: 0;
+    padding: 20px;
+    border-top: none;
+}
+
+.userImg {
+    margin-top: 16px;
+    height: 50px;
+    width: 50px;
+}
+
+.cardLeft {
+    border: 1px solid #4a4a4a;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.fixedLeft {
+    position: fixed;
+    width: 20%;
+}
+
+.fixedLeft .list-group {
+    margin-right: -40px;
+}
+
+.fixedLeft button {
+    border-radius: 50px;
+    margin-bottom: 10px;
+    color: var(--textColor);
+    background-color: var(--mainColor);
+    border: 1px solid var(--textColor);
+}
+
+.fixedLeft button:hover {
+    border: 1px solid var(--textColor);
+    background-color: var(--textColor);
+    color: var(--mainColor);
+}
+
+.accountName {
+    color: #747474;
+}
+
+.cardButton {
+    text-align: left;
+}
+
+.cardFooter {
+    margin-top: 25px;
+    margin-bottom: -20px;
+    color: #747474;
+}
+
+@media screen and (max-width: 1100px) {   
+    a {
+        padding: 0px 0px;
+    }
+}

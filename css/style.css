@@ -168,3 +168,52 @@ a:hover {
         padding: 0px 0px;
     }
 }
+
+
+.right-side{
+    background: url("https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png");
+    height: 100vh;
+}
+
+
+#SingIn{
+
+    direction: rtl;
+}
+
+
+#SingIn .left-side .top{
+ 
+    height: 50vh;
+}
+
+#SingIn .left-side .top .tweet{
+    color: var(--textColor);
+    padding: 20px;
+}
+
+#SingIn .left-side{
+
+    color: var(--textColor);
+}
+
+
+#SingUp{
+
+    direction: rtl;
+}
+
+#SingUp .left-side .top{
+ 
+    height: 50vh;
+}
+
+#SingUp .left-side .top .tweet{
+    color: var(--textColor);
+    padding: 20px;
+}
+
+#SingUp .left-side{
+
+    color: var(--textColor);
+}

@@ -5,6 +5,8 @@ function reportWindowSize() {
         document.getElementById('center').classList = "col-12";
         document.getElementById('nav').style.display = 'none';
         document.getElementById('phoneNav').style.display = '';
+        document.getElementById('sigInRightSide').style.display = 'none'
+        document.getElementById('signUpRightSide').style.display = 'none'
 
 
         let cardsIcon = document.getElementsByClassName("icon")
@@ -25,6 +27,8 @@ function reportWindowSize() {
         document.getElementById('center').classList = "col-6";
         document.getElementById('nav').style.display = '';
         document.getElementById('phoneNav').style.display = 'none';
+        document.getElementById('sigInRightSide').style.display = ''
+        document.getElementById('signUpRightSide').style.display = ''
 
         let cardsIcon = document.getElementsByClassName("icon")
         for (let i = 0; i < cardsIcon.length; i++) {

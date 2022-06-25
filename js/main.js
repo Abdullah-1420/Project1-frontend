@@ -3,15 +3,6 @@ document.getElementById("new-signup").addEventListener("click", () => {
   document.getElementById("SingUp").style.display = "";
 });
 
-function lode() {
-  document.getElementById("SingIn").style.display = "";
-  document.getElementById("SingUp").style.display = "none";
-  document.getElementById("index").style.display = "none";
-  document.getElementById("phoneNav").style.display = "none";
-}
-
-window.onload = lode();
-
 document.getElementById("signup-button").addEventListener("click", () => {
   let userName = document.getElementById("username").value;
   let password = document.getElementById("password").value;

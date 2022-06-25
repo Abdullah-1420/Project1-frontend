@@ -14,7 +14,6 @@ document.getElementById("signup-button").addEventListener("click", () => {
     password: password,
   };
 
-  console.log(userName);
   if (userName == "" || password == "" || email == "") {
     alert("Please enter data");
   } else {
@@ -37,14 +36,24 @@ document.getElementById("login-button").addEventListener("click", () => {
 
   let Users = JSON.parse(localStorage.getItem("Users"));
 
-  let user = Users.find(
-    (user) => user.email == email && user.password == password
-  );
+  let user;
 
-  if (user != undefined) {
-    document.getElementById("index").style.display = "";
-    document.getElementById("SingIn").style.display = "none";
+  if (email == "" || password == "") {
+    alert("Please enter data");
   } else {
-    alert("Please enter correct data");
+    if (Users != null) {
+      user = Users.find(
+        (user) => user.email == email && user.password == password
+      );
+
+      if (user != undefined) {
+        document.getElementById("index").style.display = "";
+        document.getElementById("SingIn").style.display = "none";
+      } else {
+        alert("Please enter correct data");
+      }
+    } else {
+      alert("User not found");
+    }
   }
 });
